@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.1.8763.0"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>645ff079-b946-4662-8e4d-aff777d38669</id>
+      <revision>11</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="0" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.1.8763.0" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8763.0" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.8763.0" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="18" top="9" width="81" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P.H</e>
+          <e type="operand">400</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="135" top="9" width="161" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P.ZONE</e>
+          <e type="operand">P.H</e>
+          <e type="operand">8</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">3200</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="324" top="9" width="185" height="49" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I.ZONE</e>
+          <e type="operand">P.ZONE</e>
+          <e type="operand">230</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">13.913</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="333" top="72" width="441" height="27" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" style="string">number of available currencies: 34</e>
+          <e type="function" args="1">SetCurrencyUnits</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="81" width="86" height="25" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" style="unit">kWh</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+          <e type="operand" style="unit">kWh</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="117" width="77" height="25" color="#000000" fontSize="10">
+      <math error="2" errorLocation="1">
+        <input>
+          <e type="operand">1</e>
+          <e type="operand">kWh</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">#</e>
+        </result>
+      </math>
+    </region>
+    <region left="477" top="234" width="295" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Price..current</e>
+          <e type="operand">14336</e>
+          <e type="operand" style="unit">BGN</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">61753</e>
+          <e type="operand" style="unit">kWh</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.2322</e>
+          <e type="operand" style="unit">BGN</e>
+          <e type="operand" style="unit">kWh</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="36" top="243" width="330" height="24" color="#000000" fontSize="10">
+      <text lang="eng" fontFamily="Liberation Sans" fontSize="10">
+        <content>
+          <p>Estimated power to maintain a heater @ 300C = 120W</p>
+        </content>
+      </text>
+    </region>
+    <region left="603" top="270" width="36" height="25" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">day</e>
+        </input>
+      </math>
+    </region>
+    <region left="36" top="279" width="204" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I.1heater</e>
+          <e type="operand">120</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">230</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.5217</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="288" top="288" width="226" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I.1zone</e>
+          <e type="operand">I.1heater</e>
+          <e type="operand">8</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">4.1739</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="630" top="378" width="107" height="24" color="#000000" fontSize="10">
+      <text lang="eng" fontFamily="Liberation Sans" fontSize="10">
+        <content>
+          <p>IGBT Transistor</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="387" width="84" height="25" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Thyristor</e>
+        </input>
+      </math>
+    </region>
+    <region left="639" top="414" width="92" height="25" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">IGW30N60TP</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="423" width="100" height="56" color="#000000" fontSize="10">
+      <text lang="eng" fontFamily="Liberation Sans" fontSize="10">
+        <content>
+          <p>BTA24-600BW<br />600V 25A <br />1.15V @ 4.2A</p>
+        </content>
+      </text>
+    </region>
+    <region left="531" top="441" width="266" height="26" color="#000000" fontSize="10">
+      <text lang="eng" width="258" fontFamily="Liberation Sans" fontSize="10">
+        <content>
+          <p>600V 53A 200V \[REGION[d364407223cc4515a5f5dd1dcf6f0864]]\ @ Ic:30A</p>
+        </content>
+        <regions>
+          <region id="d364407223cc4515a5f5dd1dcf6f0864" left="97" top="0" width="105" height="25" color="#000000" fontSize="10">
+            <math>
+              <input>
+                <e type="operand">Uces</e>
+                <e type="operand">1.8</e>
+                <e type="operand">V</e>
+                <e type="operator" args="2">*</e>
+                <e type="operator" args="2">:</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="558" top="477" width="185" height="24" color="#000000" fontSize="10">
+      <text lang="eng" width="185" fontFamily="Liberation Sans" fontSize="10">
+        <content>
+          <p>Price: 1.16 EUR @ 25 pcs</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="486" width="260" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Price.thyr</e>
+          <e type="operand">1.44</e>
+          <e type="operand">1.2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1.8</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">3.1104</e>
+        </result>
+      </math>
+    </region>
+    <region left="261" top="486" width="98" height="24" color="#000000" fontSize="10">
+      <text lang="eng" fontFamily="Liberation Sans" fontSize="10">
+        <content>
+          <p>BGN @ 25pcs</p>
+        </content>
+      </text>
+    </region>
+    <region left="495" top="513" width="306" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Losses.IGBT</e>
+          <e type="operand">I.1zone</e>
+          <e type="operand">1.25</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">10.4348</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="9" top="522" width="274" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Losses.Thyr</e>
+          <e type="operand">I.1zone</e>
+          <e type="operand">1.15</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">9.6</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="27" top="576" width="100" height="25" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Transistor1</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="612" width="102" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">R.DSON</e>
+          <e type="operand">10</e>
+          <e type="operand" style="unit">mΩ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="639" width="206" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Price.T1</e>
+          <e type="operand">4</e>
+          <e type="operand">1.2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1.8</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">8.64</e>
+        </result>
+      </math>
+    </region>
+    <region left="270" top="639" width="98" height="24" color="#000000" fontSize="10">
+      <text lang="eng" fontFamily="Liberation Sans" fontSize="10">
+        <content>
+          <p>BGN @ 25pcs</p>
+        </content>
+      </text>
+    </region>
+    <region left="27" top="657" width="287" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Losses.T1</e>
+          <e type="operand">I.1zone</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">R.DSON</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.3484</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="360" top="666" width="323" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Loss.diff</e>
+          <e type="operand">Losses.Thyr</e>
+          <e type="operand">Losses.T1</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">9.2516</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="27" top="702" width="485" height="61" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Days</e>
+          <e type="operand">4</e>
+          <e type="operand">Price.T1</e>
+          <e type="operand">Price.thyr</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Price..current</e>
+          <e type="operand">Losses.Thyr</e>
+          <e type="operand">Losses.T1</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.4291</e>
+          <e type="operand" style="unit">S</e>
+          <e type="operand" style="unit">kWh</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">BGN</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="27" top="783" width="247" height="49" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Loss.diffkw</e>
+          <e type="operand">Loss.diff</e>
+          <e type="operand">1000</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0093</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="333" top="792" width="340" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Price.diff</e>
+          <e type="operand">4</e>
+          <e type="operand">Price.T1</e>
+          <e type="operand">Price.thyr</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">22.1184</e>
+        </result>
+      </math>
+    </region>
+    <region left="45" top="846" width="403" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Loss.diffbgn</e>
+          <e type="operand">Loss.diffkw</e>
+          <e type="operand">Price..current</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0021</e>
+          <e type="operand" style="unit">BGN</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">kWh</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="45" top="900" width="358" height="24" color="#000000" fontSize="10">
+      <text lang="eng" fontFamily="Liberation Sans" fontSize="10">
+        <content>
+          <p>Нужно време за да се изплати инвестицията в МОСФЕТ</p>
+        </content>
+      </text>
+    </region>
+    <region left="27" top="918" width="300" height="59" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">hour</e>
+          <e type="operand">Price.diff</e>
+          <e type="operand">Loss.diffbgn</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">10298.3675</e>
+          <e type="operand" style="unit">S</e>
+          <e type="operand" style="unit">kWh</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">BGN</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="351" top="936" width="227" height="53" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">day</e>
+          <e type="operand">hour</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">429.0986</e>
+          <e type="operand" style="unit">S</e>
+          <e type="operand" style="unit">kWh</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">BGN</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="198" top="1008" width="211" height="53" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">year</e>
+          <e type="operand">day</e>
+          <e type="operand">365</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.1756</e>
+          <e type="operand" style="unit">S</e>
+          <e type="operand" style="unit">kWh</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">BGN</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
